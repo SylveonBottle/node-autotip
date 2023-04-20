@@ -3,7 +3,6 @@
 ## About
 
 node-autotip is command-line based version of the Forge mod [Autotip](https://github.com/Semx11/Autotip) (by [Semx11](https://hypixel.net/members/semx11.20123), [2Pi](https://hypixel.net/members/2pi.22108) and [Sk1er](https://hypixel.net/members/sk1er.199731)).
-It is useful for long afk sessions, e.g. overnight.
 
 Advantage of using node-autotip instead of the official mod is greatly smaller electricity costs, as it doesn't require any game rendering. This is achieved by communicating with the server directly using minecraft's protocol.
 
@@ -11,13 +10,14 @@ node-autotip also fixes the issue of "That player is not online, try another use
 
 ## Getting started
 
-1. Install [Node.js](https://nodejs.org/en/)
+1. Install [Node.js](https://nodejs.org/en/) 16
 2. Clone or download the project
 3. Run `npm install` command in the project directory
-4. Create a credentials.json file following [this example](https://github.com/builder-247/node-autotip/blob/master/credentials.example.json)
+4. Run `npm audit fix` to fix issues
+5. Create a credentials.json file following [this example](https://github.com/builder-247/node-autotip/blob/master/credentials.example.json)
     * **OPTIONAL**: Create `.env` file with config values in KEY=VALUE format (see config.js for full listing of options) 
-        * In order to track karma gain accurately, update the `TIP_KARMA` value, it is 100 for default rank, 200 for VIP etc. capped at 500 for MVP+.
-5. `npm start`   to start node-autotip
+        * In order to track karma gain accurately, update the `TIP_KARMA` value, it is 100 for default rank, 200 for VIP etc. capped at 500 for MVP+
+6. `npm start`   to start node-autotip
 
 ## Contributing
 
